@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <h1>Application for trip</h1>
+     <p><b>Note:</b>Form is to be filled 27 days prior</p>
+      <form >
+          <fieldset>
+              <legend>Personal details</legend>
+          <label for="fname">First Name</label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="lname">Address</label><br>
+          <input type="text" id="lname" name="fname"><br>
+          <label for="email">Email</label><br>
+          <input type="text" id="email" name="email"><br>
+          <label for="phone">Phone Number</label><br>
+          <input type="text" id="phone" name="phone"><br>
+          <label for="iq">IQ</label><br>
+          <input type="text" id="iq" name="iq"><br>
+
+          <p>Gender</p>
+          <input type="radio" id="male" name="gender" value="MALE">
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="FEMALE">
+          <label for="female">Female</label><br>
+          <input type="radio" id="other" name="gender" value="OTHER">
+          <label for="other">Other</label><br>
+          <br>
+          <label for="date">Date or tour</label>
+          <input type="date" id="date" name="date" value="date">
+          </fieldset>
+
+      </form>
+      <form>
+          <fieldset>
+              <p>Check all that apply</p>
+              <input type="checkbox" id="first" name="first" value="first">
+              <label for="first">I have management skills</label><br>
+              <input type="checkbox" id="second" name="first" value="first">
+              <label for="second">Bus for travelling</label><br>
+              <input type="checkbox" id="third" name="first" value="first">
+              <label for="third">I own van</label><br>
+              <input type="checkbox" id="fourth" name="first" value="first">
+              <label for="fourth">I have 50 students with me</label><br>
+              <input type="checkbox" id="fifth" name="first" value="first">
+              <label for="fifth">My parents allow me</label><br>
+              <input type="checkbox" id="sixth" name="first" value="first">
+              <label for="sixth">Tour will be on holiday</label><br>
+          </fieldset>
+      </form>
+
+      <form>
+          <fieldset>
+              <label for="batch">Batch</label>
+              <select name="batch" id="batch">
+                  <option value="f20">f20</option>
+                  <option value="f21">f21</option>
+              </select>
+              <label for="education">education level completed</label>
+              <select name="education" id="name">
+                  <option value="matric">Matric</option>
+                  <option value="inter">Inter</option>
+              </select>
+          </fieldset>
+      </form>
+      <form>
+          <fieldset>
+              <legend>Description Status</legend>
+              <label>Description of tour</label><br>
+              <textarea id="description" name="description" row="4" cols="6"></textarea><br>
+              <label>Upload contact details:</label><br>
+              <textarea id="contact" name="contact" rows="4" cols="6"></textarea>
+          </fieldset>
+      </form>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    *{padding: 0; margin: 0; box-sizing: border-box;}
+    .news-home{
+      background-color: black;
+      height: 0vh;
+      background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)),
+                           url("madrid-cover2.jpg");
+    }
+    .news-home h1{
+      text-align: center;
+      color: white;
+      font-family: sans-serif;
+      position: relative;
+      top: 25%;
+    }
+    .container {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+.column{
+
+  width:25%;
+  float: left;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 50%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.column:hover .image {
+  opacity: 0.3;
+}
+
+.column:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="news-home">
+    <h1>News</h1>
+</div>
+
+<div class="container">
+    <div class="column">
+  <img src="mad-news2.jpg" alt="Avatar" class="image" style="width:100%; height:100%">
+  <div class="middle">
+    <div class="text">Read more</div>
+  </div></div>
+  <div class="column">
+      <img src="mad-news-2-0.jpg" alt="Avatar" class="image" style="width:100%; height:auto">
+  <div class="middle">
+    <div class="text">Read more</div>
+  </div></div>
+  <div class="column">
+      <img src="mad-new-1-2.jpg" alt="Avatar" class="image" style="width:100%; height:auto">
+  <div class="middle">
+    <div class="text">Read more</div>
+  </div></div>
+  <div class="column">
+      <img src="mad-news-3-1.jpg" alt="Avatar" class="image" style="width:100%; height:auto">
+  <div class="middle">
+    <div class="text">Read more</div>
+  </div></div>
+</div>
+
+<div class="container">
+    <div class="column">
+  <img src="mad-new-4-1.jpg" alt="Avatar" class="image" style="width:100%; height:100%">
+  <div class="middle">
+    <div class="text">Read more</div>
+  </div></div>
+  <div class="column">
+      <img src="mad-news-5-3.jpg" alt="Avatar" class="image" style="width:100%; height:auto">
+  <div class="middle">
+    <div class="text">Read more</div>
+  </div></div>
+  <div class="column">
+      <img src="mad-news-4-0.jpg" alt="Avatar" class="image" style="width:100%; height:auto">
+  <div class="middle">
+    <div class="text">Read more</div>
+  </div></div>
+  <div class="column">
+      <img src="mad-news-6-0.jpg" alt="Avatar" class="image" style="width:100%; height:auto">
+  <div class="middle">
+    <div class="text">Read more</div>
+  </div></div>
+
+
+<div class="container">
+    <div class="column">
+  <img src="mad-news-mod.jpg" alt="Avatar" class="image" style="width:100%; height:100%">
+  <div class="middle">
+    <div class="text">Read more</div>
+  </div></div>
+  <div class="column">
+      <img src="mad-news-asen.jpg" alt="Avatar" class="image" style="width:100%; height:auto">
+  <div class="middle">
+    <div class="text">Read more</div>
+  </div></div>
+  <div class="column">
+      <img src="mad-news-mil.jpg" alt="Avatar" class="image" style="width:100%; height:auto">
+  <div class="middle">
+    <div class="text">Read more</div>
+  </div></div>
+  <div class="column">
+      <img src="mad-news-vin.jpg" alt="Avatar" class="image" style="width:100%; height:auto">
+  <div class="middle">
+    <div class="text">Read more</div>
+  </div></div>
+</div>
+</body>
+</html>
