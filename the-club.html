@@ -1,84 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>The club</title>
+<head>
+  <meta charset="UTF-8">
+  <title>Slider Background</title>
+  <style>
+    nav{
+z-index: 999;
+  width: 100%;
+  height: 80px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
-<style>
-*{background-color: black;}
-.container{
-    padding: 20px 5px 10px;
+.logo{
+  font-size: 1.7em;
+  letter-spacing: 2px;
+  font-weight:bold;
+  position: relative;
+  right: 3.5%;
+  z-index: 999;
 }
-.slider-wrapper{
-    position: relative;
-    max-width: 48rem;
-    margin: auto;
+
+.menu a{
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  position: relative;
 }
-.slider{
-    display: flex;
-    aspect-ratio: 8/5;
-    overflow-x: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0 0% 0% 0.25);
-    border-radius: 0.5rem;
+
+.menu a:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-bottom: 2px solid indianred;
+  transition: 0.2s linear;
 }
-.slider img{
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    object-fit: cover;
+
+.menu a:hover:before{
+  width: 90%;
 }
-.slider-nav{
-    display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
+.register a{
+  position : relative;
+  left: 50%;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 17px;
+  background: indianred;
+  border-radius: 8px;
+  transition: 0.4s
 }
-.slider-nav a{
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
+
+.register a:hover{
+  background: transparent;
+  border: 1px solid indianred;
 }
-.slider-nav a:hover{
-    opacity: 1;
-}
-.stad-text{
-    color:white;
-    text-align: center;
-    position: relative;
-    top: 50%;
-}
-</style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      background-image: url("images/club-stadium-1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+    }
+    #slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    #slider img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    #slider img.active {
+      opacity: 1;
+    }
+  </style>
 </head>
-
-
+<nav>
+    <div class="logo">
+        <img src="images/NicePng_real-monkey-png_405962.png" alt="Logo" style="position: fixed; top: 8px; left: 3.5vh; width: 10vh;">
+    </div>
+    <div class="menu">
+        <a href="#">HOME</a>
+        <a href="news.html">NEWS</a>
+        <a href="#">FIXTURES</a>
+        <a href="#">STADIUM</a>
+        <a href="the-club.html">THE CLUB</a>
+    </div>
+    <div class="register">
+        <a href="#">Shop now</a>
+    </div>
+</nav>
 <body>
+    
     <div style="color:#fff" class="stad-text">stadiums</div>
 
-<section class="container">
-    <div class="slider-wrapper">
-        <div class="slider">
-            <img id="slide1" src="images/club-stadium-1.jpg" alt="">
-            <img id="slide2" src="images/club-stadium-3.jpg" alt="">
-            <img id="slide3" src="images/club-stadium-4.jpg" alt="">
-            <img id="slide4" src="" alt="">
-            <img id="slide5" src="" alt="">
-        </div>
-        <div class="slider-nav">
-            <a href="#slide1"></a>
-            <a href="#slide2"></a>
-            <a href="#slide3"></a>
-            <a href="#slide4"></a>
-            <a href="#slide5"></a>
-        </div>
-    </div>
+  <div id="slider">
+    <img src="images/club-stadium-1.jpg" alt="Stadium 1" class="active">
+    <img src="images/club-stadium-2.jpg" alt="Stadium 2">
+    <img src="images/club-stadium-3.jpg" alt="Stadium 3">
+    <img src="images/club-stadium-4.jpg" alt="Stadium 4">
+  </div>
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll("#slider img");
 
-</section>
+    setInterval(() => {
+      slides[slideIndex].classList.remove("active");
+      slideIndex = (slideIndex + 1) % slides.length;
+      slides[slideIndex].classList.add("active");
+    }, 5000);
+  </script>
 </body>
 </html>
