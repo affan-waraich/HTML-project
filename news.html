@@ -115,7 +115,7 @@ nav{
           <a href="the-club.html">The Club</a>
       </div>
       <div class="register">
-          <a href="#">Shop now</a>
+          <a onclick="checker()" href="https://shop.realmadrid.com/">Shop now</a>
       </div>
   </nav>
     <div>
@@ -194,5 +194,13 @@ nav{
         <div class="text-overlay">Madrid : 7 <br> PSG : 0</div>
       </div>
     </div>
+    <script>
+      function checker() {
+          var result = confirm('Are you sure?');
+          if (result == false) {
+              event.preventDefault()
+          }
+      }
+  </script>
   </body>
 </html>

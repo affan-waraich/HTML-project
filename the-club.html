@@ -143,7 +143,7 @@ z-index: 999;
         <a href="the-club.html">The Club</a>
     </div>
     <div class="register">
-        <a href="#">Shop now</a>
+        <a onclick="checker()" href="https://shop.realmadrid.com/">Shop now</a>
     </div>
 </nav>
 <body>
@@ -185,6 +185,13 @@ z-index: 999;
       </div>
     </div>    
   </div>
-
+  <script>
+    function checker() {
+        var result = confirm('Are you sure?');
+        if (result == false) {
+            event.preventDefault()
+        }
+    }
+</script>
 </body>
 </html>
