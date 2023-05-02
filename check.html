@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,215 +17,19 @@
 </style>
   </head>
   <body>
-    <div class="page">heloo</div>
+    <nav>
+      <div class="logo">
+          <img src="images/NicePng_real-monkey-png_405962.png" alt="Logo" style="position: fixed; top: 18px; left: 3.5vh; width: 7vh;">
+      </div>
+      <div class="menu">
+          <a href="home.html">Home</a>
+          <a href="news.html">News</a>
+          <a href="fixtures.html">Fixtures</a>
+          <a onclick="checker()" href="the-club.html">The Club</a>
+      </div> 
+      <div class="register">
+          <a onclick="alert('Are you sure?')" href="https://shop.realmadrid.com/">Shop now</a>
+      </div>
+  </nav>
   </body>
-</html> -->
-
-.header1{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)),
-                      url("images/madrid-cover2.jpg");
-    background-size: cover;
-    font-family: sans-serif;
-}
-nav{
- width: 100%;
- height: 80px;
- color: white;
- display: flex;
- justify-content: space-around;
- align-items: center;
-}
-
-.logo{
- font-size: 1.7em;
- letter-spacing: 2px;
- font-weight:bold;
- position: relative;
- right: 3.5%;
-}
-
-.menu a{
- text-decoration: none;
- color: white;
- padding: 10px 20px;
- font-size: 15px;
- position: relative;
- font-weight: 700;
-}
-
-.menu a:before{
- content: '';
- position: absolute;
- top: 0;
- left: 0;
- width: 0%;
- height: 100%;
- border-bottom: 2px solid indianred;
- transition: 0.2s linear;
-}
-
-.menu a:hover:before{
- width: 90%;
-}
-.register a{
- 
- position : relative;
- left: 105%;
- text-decoration: none;
- color: white;
- padding: 10px 20px;
- font-size: 14px;
- background: indianred;
- border-radius: 8px;
- transition: 0.4s
-}
-
-.register a:hover{
- background: transparent;
- border: 1px solid indianred;
-}
-
-.h-txt{
- max-width: 650px;
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%,-50%);
- text-align: center;
- color: white;
-}
-
-.h-txt h1{
- font-size: 3em;
-}
-
-.h-txt a{
- text-decoration: none;
- background: indianred;
- color: white;
- padding: 10px 20px;
- letter-spacing: 5px
- border-radius: 9px;
- transition: 0.4s;
-}
-
-.h-txt a:hover{
-  background: transparent;
-  border: 1px solid indianred;
-}
-/*page2*/
-.page2{
- width: 100%;
- height: 100vh;
-}
-/*page2 (right)*/
-.header2{
- width: 50%;
- float: right;
- height: 100vh;
- background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)),
-                   url("images/madrid-news.jpg");
- font-family: sans-serif
-}
-/*page2(left)*/
-.header3{
- width: 50%;
- float: left;
- height: 100vh;
- background-color: black;
- font-family: sans-serif
-}
-
-.h-txt2 h1{
- font-size: 2em;
- color: white;
- position: relative;
- top: 50%;
- left: 6%;
-}
-
-.h-txt2 p{
- font-size: 1em;
- color: white;
- position: relative;
- left: 6%;
-}
-
-.h-txt2 span{
- color: white;
- position: relative;
- left: 6%;
-}
-
-.h-txt2 a{
- position: relative;
- left: 6%;
- color: white;
-}
-
-/*page3*/
-.page3{
- background-color: black;
- padding: 40px 30px 115px 30px ;
-}
-.para{
- padding: 20px;
- color:white;
- font-size: 2em;
- font-family: sans-serif;
- font-weight: 800;
- text-align: center;
-}
-.polaroid{
- padding: 10px 0px 0px 0px;
- display: flex;
-}
-.polaroid-inner {
- width: 25%;
- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- text-align: center;
- padding: 20px;
- 
-}
-     
-.polaroid-container {
- padding: 10px;
- background-color: rgb(179, 204, 235);
-}
-/*page4*/
-.club-image-container {
- position: relative;
- display: inline-block;
- background-color: black;
-}
-
-.club-text {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- z-index: 1;
- text-align: center;
- font-size: 40px;
- font-weight: 700;
- font-family: sans-serif;
- color: white;
- opacity: 0;
- transition: opacity 0.5s;
-}
-
-.club-image-container:hover .club-text {
- opacity: 1;
-}
-
-.club-image-container:hover .club-image {
- opacity: 0.3;
-}
-
-.footer{
- background-color: black;
- width: 100%;
- height: 100vh;
-}
+</html>

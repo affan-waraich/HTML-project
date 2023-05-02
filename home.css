@@ -48,7 +48,6 @@ nav{
   width: 90%;
 }
 .register a{
-  
   position : relative;
   left: 105%;
   text-decoration: none;
@@ -213,9 +212,10 @@ nav{
   height: 100vh;
 }
 
-@media (max-width:500px) {
-  nav{
-    
+@media (max-width:650px) {
+  
+  .logo{
+    opacity: 0;
   }
   .menu a{
     text-align: right;
@@ -232,6 +232,9 @@ nav{
     font-family: sans-serif;
   }
   .h-txt h1{
+    display: none;
+  }
+  .h-txt a{
     display: none;
   }
   .header2{
@@ -253,5 +256,12 @@ nav{
   }
   .polaroid-inner {
     width: 75%;
+  }
+  .club-image-container{
+    display: block;
+    width: auto;
+  }
+  .club-text{
+    font-size: 20px;
   }
 }
