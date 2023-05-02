@@ -15,10 +15,10 @@
             <a href="home.html">Home</a>
             <a href="news.html">News</a>
             <a href="fixtures.html">Fixtures</a>
-            <a href="the-club.html">The Club</a>
+            <a onclick="checker()" href="the-club.html">The Club</a>
         </div>
         <div class="register">
-            <a href="#">Shop now</a>
+            <a onclick="alert('Are you sure?')" href="https://shop.realmadrid.com/">Shop now</a>
         </div>
     </nav>
     <section class="h-txt">
@@ -95,10 +95,19 @@
       style="width: 100%; height: auto; display: block"
     />
     <div class="club-text">
-      <div class="the-club">The Club</div>
+      <a class="the-club" href="the-club.html">The Club</a>
     </div>
   </div>
 </div>
 <div class="footer"></div>
+
+<script>
+    function checker() {
+        var result = confirm('Are you sure?');
+        if (result == false) {
+            event.preventDefault()
+        }
+    }
+</script>
 </body>
 </html>

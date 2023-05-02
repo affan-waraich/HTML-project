@@ -81,6 +81,7 @@ nav{
 
 .h-txt a{
   text-decoration: none;
+  font-size: 1em;
   background: indianred;
   color: white;
   padding: 10px 20px;
@@ -192,6 +193,10 @@ nav{
   color: white;
   opacity: 0;
   transition: opacity 0.5s;
+}
+.the-club{
+  text-decoration: none;
+  color: white;
 }
 
 .club-image-container:hover .club-text {
